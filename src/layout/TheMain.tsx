@@ -4,7 +4,7 @@ import ACard from '@components/ACard'
 function TheFooter() {
   return (
     <main>
-      <h2>Voici votre profil</h2>
+      <h2>Voici votre personnage</h2>
       <ACard />
     </main>
   )

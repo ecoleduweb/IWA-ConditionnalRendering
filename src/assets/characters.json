@@ -46,7 +46,7 @@
     }
   },
   {
-    "class": "Clerc",
+    "class": "Cleric",
     "description": "Un prêtre dévoué avec des pouvoirs de guérison et de soutien",
     "stats": {
       "health": 80,
@@ -56,7 +56,12 @@
       "dexterity": 8,
       "wisdom": 18
     },
-    "abilities": ["Soin", "Bénédiction", "Purification", "Smite"],
+    "abilities": [
+      "Soin",
+      "Bénédiction",
+      "Purification",
+      "Smite"
+    ],
     "equipment": {
       "weapon": "Masse",
       "armor": "Armure d'écailles",
@@ -74,7 +79,12 @@
       "dexterity": 18,
       "wisdom": 10
     },
-    "abilities": ["Attaque sournoise", "Crochetage", "Esquive", "Disparition"],
+    "abilities": [
+      "Attaque sournoise",
+      "Crochetage",
+      "Esquive",
+      "Disparition"
+    ],
     "equipment": {
       "weapon": "Dagues",
       "armor": "Armure de cuir",
