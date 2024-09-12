@@ -1,0 +1,84 @@
+[
+  {
+    "class": "Mage",
+    "description": "Un maître des arcanes capable de lancer de puissants sorts",
+    "stats": {
+      "health": 60,
+      "mana": 120,
+      "strength": 5,
+      "intelligence": 18,
+      "dexterity": 8,
+      "wisdom": 15
+    },
+    "abilities": [
+      "Boule de feu",
+      "Bouclier magique",
+      "Téléportation",
+      "Projectile magique"
+    ],
+    "equipment": {
+      "weapon": "Bâton magique",
+      "armor": "Robe d'apprenti",
+      "accessory": "Anneau de concentration"
+    }
+  },
+  {
+    "class": "Guerrier",
+    "description": "Un combattant robuste spécialisé dans le combat rapproché",
+    "stats": {
+      "health": 100,
+      "mana": 20,
+      "strength": 18,
+      "intelligence": 8,
+      "dexterity": 12,
+      "wisdom": 8
+    },
+    "abilities": [
+      "Coup puissant",
+      "Bouclier défensif",
+      "Cri de guerre",
+      "Charge"
+    ],
+    "equipment": {
+      "weapon": "Épée longue",
+      "armor": "Armure de plaques",
+      "accessory": "Amulette de force"
+    }
+  },
+  {
+    "class": "Clerc",
+    "description": "Un prêtre dévoué avec des pouvoirs de guérison et de soutien",
+    "stats": {
+      "health": 80,
+      "mana": 100,
+      "strength": 10,
+      "intelligence": 12,
+      "dexterity": 8,
+      "wisdom": 18
+    },
+    "abilities": ["Soin", "Bénédiction", "Purification", "Smite"],
+    "equipment": {
+      "weapon": "Masse",
+      "armor": "Armure d'écailles",
+      "accessory": "Symbole sacré"
+    }
+  },
+  {
+    "class": "Voleur",
+    "description": "Un expert en furtivité et en manipulation de serrures",
+    "stats": {
+      "health": 70,
+      "mana": 40,
+      "strength": 10,
+      "intelligence": 12,
+      "dexterity": 18,
+      "wisdom": 10
+    },
+    "abilities": ["Attaque sournoise", "Crochetage", "Esquive", "Disparition"],
+    "equipment": {
+      "weapon": "Dagues",
+      "armor": "Armure de cuir",
+      "accessory": "Cape d'ombre"
+    }
+  }
+]

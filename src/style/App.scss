@@ -1,0 +1,23 @@
+.flex {
+  display: flex;
+
+  &-between {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.wrapper {
+  margin: auto;
+  width: 728px;
+}
+
+.border-bottom {
+  border-bottom: solid 1px #E5E5E5;
+  padding-bottom: 20px;
+}
+
+.paragraph-border {
+  border-left: solid 3px black;
+  padding-left: 20px;
+}
