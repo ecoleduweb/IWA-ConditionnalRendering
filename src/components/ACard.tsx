@@ -6,81 +6,66 @@ import { useState } from 'react';
 const characters: CharacterClass[] = charactersJson;
 const characterList = ['mage', 'guerrier', 'cleric', 'voleur']
 
+// 1. Prend le temps de bien lire le code. S'il y a une ligne que tu ne comprends pas, CHAT GPT!
+// 2. À patrir de l'objet character, va chercher l'objet mage.
+//    Va lire les deux premières lignes de code sur ce site : https://sentry.io/answers/find-object-by-property-in-javascript-array/
+// 3. Crée une variable style qui contient un objet avec une propriété backgroundImage qui contient l'url de l'image du mage (/mage.jpg).
+//    La variable style est déjà affectée au tout premier div du html. On peut donc ajouter des éléments de style à partir du code au besoin!
+// QUESTION : Quand dois-tu prendre une classe conditionnelle ou un style conditionnel (exemple de classe conditionnel? L'exemple avec le dark mode)?
+// 4. À partir de l'objet, modifie le html pour afficher les différentes informations du mage.
+// 5. Fait fonctionner le bouton cacher les détails pour afficher ou cacher les détails du mage.
+//    Voici un lien pour t'aider à comprendre le conditionnal rendering https://react.dev/learn/conditional-rendering
+//    N'oublie pas de changer le texte du bouton!
+///////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////Deuxième partie//////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+// 1. Fait fonctionner les boutons previous et next pour afficher les informations des autres personnages.
+// 2. ohoh! Il semble que les objets n'ont pas tous le même nombre d'abilités? Comment pourrais-tu faire pour afficher les abilités de manière dynamique?
+// 3. BONUS on pourrait faire la même chose avec l'objet équipement?
+
 const ACard = () => {
-  // Lien vers le résumé de la documentation https://react.dev/learn/conditional-rendering#recap
-
-  //1 . Aller chercher le bon personnage, ici on veut le page.
-  const [selectedIndex, setSelectedIndex] = useState(0)
-  const [showDetails, setShowDetails] = useState(false)
-  const characterSelected = characterList[selectedIndex]
-  const character = characters.find(x => x.class.toLocaleLowerCase() === characterSelected) as CharacterClass
   const style = {
-    backgroundImage: `url(/${characterSelected}.jpg)`,
-    backgroundSize: 'contain',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center'
+    // exemple de style
+    backgroundColor: `grey`,
   }
-
-  const handlePreviousClick = () => {
-    setSelectedIndex(selectedIndex - 1 < 0 ? characterList.length - 1 : selectedIndex - 1)
-  }
-
-  const handleNextClick = () => {
-    setSelectedIndex(selectedIndex + 1 > characterList.length - 1 ? 0 : selectedIndex + 1)
-  }
-
-  const handleShowDetailsClick = () => {
-    setShowDetails(!showDetails)
-  }
-
   return (
-    <div className='card flex-between' style={style}>
-      <div className='content'>
-        {character ?
-          <>
-            <h2>{character.class} {showDetails}</h2>
-
-            <p>Description: {character.description}</p>
-            {showDetails && <div className="details">
-              <div className='stats'>
-                <h2>Statistiques</h2>
-                <p>Health: {character.stats.health}</p>
-                <p>Mana: {character.stats.mana}</p>
-                <p>Strength: {character.stats.strength}</p>
-                <p>Intelligence: {character.stats.intelligence}</p>
-                <p>Dexterity: {character.stats.dexterity}</p>
-                <p>Wisdom: {character.stats.wisdom}</p>
-              </div>
-              <div className='ability'>
-                <h2>Talents</h2>
-                <ul>
-                  {character.abilities.map(x =>
-                    <li>
-                      {x}
-                    </li>
-                  )}
-                </ul>
-              </div>
-              <div className='equipment'>
-                <h2>Équipement</h2>
-                <ul>
-                  {Object.keys(character.equipment).map((x) =>
-                    <li>
-                      {x} : {character.equipment[x as keyof typeof character.equipment]}
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>}
-          </>
-          :
-          <p>Le charactère n'existe pas</p>
-        }
+    <div className="card flex-between" style={style}>
+      <div className="content">
+        <h2>Mage </h2>
+        <p>Description: Un maître des arcanes capable de lancer de puissants sorts</p>
+        <div className="details">
+          <div className="stats">
+            <h2>Statistiques</h2>
+            <p>Health: 60</p>
+            <p>Mana: 120</p>
+            <p>Strength: 5</p>
+            <p>Intelligence: 18</p>
+            <p>Dexterity: 8</p>
+            <p>Wisdom: 15</p>
+          </div>
+          <div className="ability">
+            <h2>Talents</h2>
+            <ul>
+              <li>Boule de feu</li>
+              <li>Bouclier magique</li>
+              <li>Téléportation</li>
+              <li>Projectile magique</li>
+            </ul>
+          </div>
+          <div className="equipment">
+            <h2>Équipement</h2>
+            <ul>
+              <li>weapon : Bâton magique</li>
+              <li>armor : Robe d'apprenti</li>
+              <li>accessory : Anneau de concentration</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div className='flex-between'>
-        <button onClick={handlePreviousClick}>PREVIOUS</button>
-        <button onClick={handleShowDetailsClick}>{showDetails ? 'Cacher ' : 'Montrer '}les détails</button>
-        <button onClick={handleNextClick}>NEXT</button>
+      <div className="flex-between">
+        <button>PREVIOUS</button>
+        <button>Cacher les détails</button>
+        <button>NEXT</button>
       </div>
     </div>
   )

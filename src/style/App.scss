@@ -21,3 +21,32 @@
   border-left: solid 3px black;
   padding-left: 20px;
 }
+
+
+button {
+  font-family: 'MedievalSharp', cursive;
+  /* Ensure you have this font or a similar medieval font */
+  background-color: #2c2c2c;
+  /* Dark background */
+  color: #d4af37;
+  /* Gold text color */
+  border: 2px solid #d4af37;
+  /* Gold border */
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #d4af37;
+    /* Gold background on hover */
+    color: #2c2c2c;
+    /* Dark text color on hover */
+  }
+
+  &:active {
+    background-color: #a37c2c;
+    /* Darker gold on active */
+    border-color: #a37c2c;
+  }
+}
