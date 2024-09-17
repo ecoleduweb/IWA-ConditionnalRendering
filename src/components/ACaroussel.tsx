@@ -22,7 +22,7 @@ const characterList = ['mage', 'guerrier', 'cleric', 'voleur']
 // 2. ohoh! Il semble que les objets n'ont pas tous le même nombre d'abilités? Comment pourrais-tu faire pour afficher les abilités de manière dynamique?
 // 3. BONUS on pourrait faire la même chose avec l'objet équipement?
 
-const ACard = () => {
+const ACaroussel = () => {
   const style = {
     // exemple de style
     backgroundColor: `grey`,
@@ -42,4 +42,4 @@ const ACard = () => {
 }
 
 
-export default ACard
+export default ACaroussel
