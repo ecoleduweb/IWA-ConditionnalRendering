@@ -63,9 +63,9 @@ const ACard = () => {
         </div>
       </div>
       <div className="flex-between">
-        <button>PREVIOUS</button>
-        <button>Cacher les détails</button>
-        <button>NEXT</button>
+        <button>Précédent</button>
+        <button>Cacher les détails{/* Afficher les détails */}</button>
+        <button>Suivant</button>
       </div>
     </div>
   )
