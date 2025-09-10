@@ -4,7 +4,7 @@ import charactersJson from '@assets/characters.json';
 import { CharacterClass } from '../types/character';
 import { useState } from 'react';
 const characters: CharacterClass[] = charactersJson;
-const characterList = ['mage', 'guerrier', 'cleric', 'voleur']
+const characterList = ['guerrier', 'cleric', 'voleur', 'mage'];
 // 1. Prend le temps de bien lire le code. S'il y a une ligne que tu ne comprends pas, CHAT GPT!
 // 2. À patrir de l'objet character, va chercher l'objet mage.
 //    Va lire les deux premières lignes de code sur ce site : https://sentry.io/answers/find-object-by-property-in-javascript-array/
@@ -22,14 +22,19 @@ const characterList = ['mage', 'guerrier', 'cleric', 'voleur']
 // 2. ohoh! Il semble que les objets n'ont pas tous le même nombre d'abilités? Comment pourrais-tu faire pour afficher les abilités de manière dynamique?
 // 3. BONUS on pourrait faire la même chose avec l'objet équipement?
 
+// const characterSelected = 'mage'
 const ACaroussel = () => {
   const style = {
     // exemple de style
-    backgroundColor: `grey`,
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    // backgroundImage: `url(/${characterSelected}.jpg)`,
   }
   return (
     <div className="card flex-between" style={style}>
       <div className="content">
+        {/* REMPLACE MOI PAR LA CLASSE SELECTIONNÉE!!! */}
         <h2>Mage </h2>
         <p>Description: Un maître des arcanes capable de lancer de puissants sorts</p>
         <div className="details">

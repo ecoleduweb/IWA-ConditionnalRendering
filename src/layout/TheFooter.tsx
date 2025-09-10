@@ -3,7 +3,7 @@ import '@style/Layout.scss'
 function TheFooter() {
   return (
     <footer>
-      Cours 5 - déjà!
+      Cours 4 - déjà!
     </footer>
   )
 }

@@ -15,12 +15,7 @@
       "Bouclier magique",
       "Téléportation",
       "Projectile magique"
-    ],
-    "equipment": {
-      "weapon": "Bâton magique",
-      "armor": "Robe d'apprenti",
-      "accessory": "Anneau de concentration"
-    }
+    ]
   },
   {
     "class": "Guerrier",
