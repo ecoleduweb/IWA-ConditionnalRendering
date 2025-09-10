@@ -1,6 +1,6 @@
 [
   {
-    "class": "Mage",
+    "class": "mage",
     "description": "Un maître des arcanes capable de lancer de puissants sorts",
     "stats": {
       "health": 60,
@@ -40,7 +40,7 @@
     }
   },
   {
-    "class": "Cleric",
+    "class": "cleric",
     "description": "Un prêtre dévoué avec des pouvoirs de guérison et de soutien",
     "stats": {
       "health": 80,
@@ -60,7 +60,7 @@
     }
   },
   {
-    "class": "Voleur",
+    "class": "voleur",
     "description": "Un expert en furtivité et en manipulation de serrures",
     "stats": {
       "health": 70,
