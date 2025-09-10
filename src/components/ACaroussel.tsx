@@ -26,6 +26,7 @@ const characterList = ['guerrier', 'cleric', 'voleur', 'mage'];
 const ACaroussel = () => {
   const style = {
     // exemple de style
+    backgroundColor: 'gray',
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
