@@ -29,7 +29,7 @@ Comprendre le fonctionnement du rendu conditionnel et des classes conditionnelle
 
 1. Va voir le fichier characters.json qui est dans le dossier assets. Quelle sont les classes utilisées?
 
-Avec cette ligne `import { CharacterClass } from '../types/character';` et cette ligne : `const characters: CharacterClass[] = charactersJson;`, on importe le tableau CharacterClass. Tu peux les afficher dans le html avec `{const characters: CharacterClass[] = charactersJson;}`.
+Avec cette ligne `import { CharacterClass } from '../types/character';` et cette ligne : `const characters: CharacterClass[] = charactersJson;`, on importe le tableau CharacterClass. Nous allons laisser tomber notre tableau de string pour utiliser le tableau d'objets. Essaie de faire la modification. `characterSelected` deviendra un objet. L'attribut avec le nom de la classe sera `name`.
 
 Va lire cet article qui explique comment faire une recherche dans un tableau en javascript :  https://sentry.io/answers/find-object-by-property-in-javascript-array/
 
