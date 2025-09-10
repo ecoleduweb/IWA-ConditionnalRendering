@@ -5,7 +5,7 @@ Comprendre le fonctionnement du rendu conditionnel et des classes conditionnelle
 ## Classe conditionnelle
 
 1. Dans le composant ACaroussel, change la couleur du style pour du bleu en changeant le nom de la variable dans la string.
-2. décomente les variables en lien avec `characterSelected`.
+2. décomente les variables en lien avec `selectedCharacter`.
 3. Affiche le personnage sélectionné à cet endroit dans la balise h2 : 
 
 ```
@@ -15,7 +15,7 @@ Comprendre le fonctionnement du rendu conditionnel et des classes conditionnelle
 
 4. Ajoute un écouteur sur le bouton Next et quand on clic dessus, on change de caractère en fonction de la liste characterList. Indice, ajoute une variable currentIndex pour garder l'index actuel en mémoire.
    
-**Q** : Est-ce que `const characterSelected` est encore une bonne façon de gérer cette variable? Pourquoi? Que dois tu utiliser?
+**Q** : Est-ce que `const selectedCharacter` est encore une bonne façon de gérer cette variable? Pourquoi? Que dois tu utiliser?
 
 **A** : 
 

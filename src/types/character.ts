@@ -18,7 +18,7 @@ interface CharacterStats {
     description: string;
     stats: CharacterStats;
     abilities: string[];
-    equipment: CharacterEquipment;
+    equipment: CharacterEquipment | undefined;
   }
 
   // ACM crée les interfaces en te basant sur les valeurs.
