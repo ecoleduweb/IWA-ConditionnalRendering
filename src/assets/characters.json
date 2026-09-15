@@ -18,7 +18,7 @@
     ]
   },
   {
-    "class": "Guerrier",
+    "class": "guerrier",
     "description": "Un combattant robuste spécialisé dans le combat rapproché",
     "stats": {
       "health": 100,
